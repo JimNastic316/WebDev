@@ -58,6 +58,60 @@ footer > a{
   color: #457b9d;
 }
 
+/* Attribute Selectors */
+/* section[class="post"]{
+  background-color:#dfe8dc;
+} */
+
 input[type="password"]{
-  color: red;
+  color:rgb(231, 217, 228);
+}
+
+/* Pseudo CLass Selector */
+.post button:hover{
+  background-color: red;
+  color: #ffffff;
+}
+
+.post a:hover {
+  text-decoration: overline;
+}
+
+.post button:active{
+  background-color: #02c38a;
+}
+
+a[href*=google]{
+  color: #c7da25;
+}
+
+.post:nth-of-type(2n){
+  background-color:#dfe8dc;
+ 
+}
+/******************************/
+
+/* Pseudo Element Selector*/
+h2::first-letter{
+  font-size: 50px;
+}
+
+p::first-line{
+  color: purple;
+
+}
+
+p::selection{
+  background-color: #fcbf49;
+}
+
+span::after{
+  content: "!AFTER!";
+  color:#e63946
+}
+
+span::before{
+  content:"??????????before????????????????";
+  color:green;
+  background: blue;
 }
