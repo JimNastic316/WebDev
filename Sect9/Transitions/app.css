@@ -1,0 +1,61 @@
+.circle {
+  width: 300px;
+  height: 300px;
+  background-color: magenta;
+
+  /* every transition takes 3 seconds */
+  /* transition:3s; */
+
+  /* Singles out property name "background-color"
+  sets duration of transition to 3 seconds */
+  /* transition: background-color 3s; */
+
+  /* Singles out property name "background-color"
+  sets duration of transition to 3 seconds 
+  AND sets delay to 1s */
+  /* transition: background-color 3s 1s; */
+
+  /* Sets all properties to 1s duration and 1s delay */
+  /* transition: all 1s 1s; */
+
+  /* Sets background color duration to 2 seconds
+  sets border-radius to 10 seconds */
+  transition: background-color 2s, border-radius 10s;
+
+}
+
+.circle:hover {
+  background-color: cyan;
+  border-radius: 50%;
+}
+
+/*******************************
+Timing function examples below
+*******************************/
+section div {
+  height: 100px;
+  width: 100px;
+  background-color: turquoise;
+  margin: 20px 0;
+  transition: margin-left 3s;
+}
+
+section:hover div {
+  margin-left: 500px;
+}
+
+div:nth-of-type(1) {
+  transition-timing-function: ease-in;
+}
+
+div:nth-of-type(2) {
+  transition-timing-function: ease-out;
+}
+
+div:nth-of-type(3) {
+  transition-timing-function: cubic-bezier(0.7, 0, 0.84, 0);
+}
+
+div:nth-of-type(4) {
+  transition-timing-function: cubic-bezier(0.85, 0, 0.15, 1);
+}
