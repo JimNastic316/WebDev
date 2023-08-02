@@ -23,13 +23,15 @@
 
   <!-- Most of this comes straight from the Bootsrap Docs -->
 
-  <nav id="mainNavbar" class="navbar navbar-dark bg-dark navbar-expand-md">
+  <!-- py-0 is a Bootstrap utility to set the padding -->
+  <!-- fixed-top keeps navbar at top when scrolling, must have content to work -->
+  <nav id="mainNavbar" class="navbar navbar-dark navbar-expand-md py-0 fixed-top">
     <a href="#" class="navbar-brand">CANDY</a>
 
     <!-- Hamburger in upper right corner -->
     <!-- data-target "#navlinks" refers to id in div  -->
     <!-- aria-label is for screen readers to understand -->
-    <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle navigation"> 
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
@@ -49,8 +51,17 @@
     </div>
 
     <!-- id navLinks refereced as data target above -->
-    <div class="collapse navbar-collapse" id="navLinks"></div> 
+    <div class="collapse navbar-collapse" id="navLinks"></div>
   </nav>
+
+  <!-- Mock content -->
+  <!-- <div class="class container">
+    <div class="class row">
+      <div class="class col-4">
+        lorem*1000
+      </div>
+    </div>
+  </div> -->
 
 
   <!-- Optional JavaScript -->
