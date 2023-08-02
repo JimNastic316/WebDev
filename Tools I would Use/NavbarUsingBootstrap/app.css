@@ -1,0 +1,25 @@
+body {
+    /* main background */
+    /* pink background */
+    background: #f5d9d5;
+    font-family: "Nunito", san-serif;
+}
+
+#mainNavbar {
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+#mainNavbar .nav-link {
+    color: white
+}
+
+/* what happens when hover */
+#mainNavbar .nav-link:hover {
+    /* background-color: aqua; */
+    color: #ea1c2c;
+}
+
+#mainNavbar .navbar-brand {
+    color: #ea1c2c;
+}
