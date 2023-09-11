@@ -20,18 +20,23 @@ let attempts = 1;
 // Ask user to enter a guess, and tell them if it is too high 
 // // or too low, as long as the guess is incorrect
 // while (parseInt(guess !== targetNum) || attempts < 10) {
-while (attempts < 10) { 
-
+while (parseInt(guess) !==targetNum) { 
+    if (guess === 'q') break;
     attempts++;  //increment attempts
-    
-    // if (guess > targetNum) {
-    //     guess = parseInt(prompt("Too high, Enter a new guess:"));
-    // } else {
-    //     guess = parseInt(prompt("too low, enter a new guess:"));
-    // }
+    // console.log(`guess + targetNum = ${guess + targetNum}`);
+    if (guess > targetNum) {
+        guess = (prompt("Too high, Enter a new guess:"));
+    } else {
+        guess = (prompt("too low, enter a new guess:"));
+    }
 
-    console.log(`attempts: ${attempts} guess: ${guess} targetNum: ${targetNum}`);
+    // console.log(`attempts: ${attempts} guess: ${guess} targetNum: ${targetNum}`);
     
 }
 
-console.log(`You got it! It took you ${attempts} guesses`);
+if (guess === 'q') {
+    console.log('OK YOU QUIT')
+} else {
+    console.log(`You got it! It took you ${attempts} guesses`);
+}
+
