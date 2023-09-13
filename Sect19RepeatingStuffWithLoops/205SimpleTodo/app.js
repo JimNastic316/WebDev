@@ -25,7 +25,10 @@ while (input !=='quit') {
         }
     } else if (input === 'delete') {
         //remove todo from list
-        toDelete = (prompt('What would you like to delete'))
+        toDelete = (prompt('What would you like to delete') - 1);
+        arrList.splice(toDelete, 1);
+        
+
     } else {
         console.log('That is not a valid choice');
     }
