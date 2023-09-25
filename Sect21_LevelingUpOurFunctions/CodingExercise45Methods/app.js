@@ -21,3 +21,13 @@ const square = {
 
 console.log(square.area(10)) //100
 console.log(square.perimeter(10)) //40
+
+function yell(msg) {
+    try{
+        console.log(msg.toUpperCase().repeat(3));
+    } catch(e) {
+        console.log('Please pass a string next time!')
+    }
+}
+
+yell('hello jello')
