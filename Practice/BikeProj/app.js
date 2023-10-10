@@ -82,18 +82,36 @@ console.log('********************');
 
 for (const bike of bikeArr) {
     console.log(Object.keys(bike));
- }
- console.log('********************');
-
- for (const bike of bikeArr) {
-    console.log(Object.values(bike));
- }
- console.log('********************');
-
-for (const bike of bikeArr) {
-   console.log(Object.entries(bike));
+    let firstTry = (Object.keys(bike));
+//    console.log(`firstTry = ${firstTry}`);
+    firstTry.forEach(function (b) {
+        if (b === 'color') {
+            console.log(`b = ${b}`);
+            // c will be a string, not really useful
+            let c = (Object.values(b));
+            console.log(`c = ${c}`);
+        } else {
+            console.log('b is not color');
+        }
+    })
+    // console.log(Object.values(bike));
+    // bike.forEach(n) {
+    //     if (n === 'color') {
+    //         console.log("EUREKA");
+    //     }
+    // }
 }
-console.log('********************');
+// console.log('********************');
+
+// for (const bike of bikeArr) {
+//     console.log(Object.values(bike));
+// }
+// console.log('********************');
+
+// for (const bike of bikeArr) {
+//     console.log(Object.entries(bike));
+// }
+// console.log('********************');
 
 // ******************************************
 // Searching an array of objects for specific 
@@ -101,15 +119,15 @@ console.log('********************');
 
 function searchFor(trait, myArr) {
     // for (const trait of myArr) {
-    if (PageTransitionEvent = 'color') {
+    if (trait = 'color') {
         console.log(`Found ${bikeArr[trait]}`);
     } else {
         console.log('Not looking for ${trait');
     }
     // }
 }
-    console.log('********************');
+//     console.log('********************');
 
-for (const trait of bikeArr) {
-    searchFor(trait, bikeArr);
-}
+// for (const trait of bikeArr) {
+//     searchFor(trait, bikeArr);
+// }
