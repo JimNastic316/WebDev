@@ -14,3 +14,18 @@ const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
 
 
 //YOU CODE GOES HERE:
+//************************** */
+
+// const spans = document.querySelectorAll('span');
+// for (let i = 0; i < spans.length; i++) {
+//   spans[i].style.color = colors[i];
+// }
+// ****************************** 
+
+const rainbowArr = document.querySelectorAll('span');
+// console.log(rainbowArr);
+
+for (let color = 0; color < rainbowArr.length; color++) {
+// for(let color of rainbowArr) {
+    rainbowArr[color].style.color = colors[color];
+}
