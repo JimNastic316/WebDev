@@ -1,9 +1,13 @@
 // WRITE YOUR CODE IN HERE:
-const hiLight = document.querySelector('li');
-console.log(hiLight);
+const hiLight = document.querySelectorAll('li');
+// console.log(`hiLight length = ${hiLight.length}`);
+// console.log(`hiLight = ${hiLight}`);
 
-// for (let i = 0; i < hiLight.length; i++){
-//     if hiLight.classList.contains('highLight') {
-//         hiLight.classList.toggle('hiLight');
-//     }
-    
+
+
+for (let i = 0; i < hiLight.length; i++) {
+    let currentHiLight = hiLight[i].classList;
+    // console.log(currentHiLight);
+    currentHiLight.toggle('highlight');
+}
+
